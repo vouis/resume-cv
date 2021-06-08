@@ -37,9 +37,6 @@
     .github>.github-png  {
         width:2.5em;
     }
-    .github>.github-name{
-     margin-left:0.5em ;
-    }
     .juejin{
         display: flex;
         /*flex-direction: column;*/
@@ -47,9 +44,6 @@
     .juejin>.juejin-png  {
         width:1.2em;
         margin-left: 0.7em;
-    }
-    .juejin>.juejin-name{
-     margin-left:1em ;
     }
    
     body {}
