@@ -44,7 +44,18 @@
     h3{
         font-weight: 700;
         font-size: 100%;
-        margin-bottom: 0.6em;
+        margin-bottom: 0.3em;
+    }
+
+    .language{
+        float: right;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .language>img{
+        margin-right: 0.6em;
+        width:1em;
     }
 
 
