@@ -2,6 +2,7 @@ import trans from './images/trans.png';
 import contact from './images/contact.png';
 import educate from './images/educate.png';
 import skill from './images/skill.png';
+import work from './images/work.png';
 
 let isEn = localStorage.getItem('isEn')||'0'
 
@@ -15,7 +16,7 @@ let pageCn = `<article>
     <section class="bio">
       <h1 class='mid'>丁宁</h1>
       <p class="mid1">
-        女 | 23岁 | 前端开发工程师 | 深圳
+        女 | 25岁 | 前端开发工程师 | 深圳
       </p >
     </section>
 
@@ -85,7 +86,7 @@ let pageCn = `<article>
 
     <section class="projects">
       <h2>
-        <img src="./images/work.png" alt="">
+        <img src=${work} alt="">
         工作经历
       </h2>
       <ol>
@@ -98,8 +99,7 @@ let pageCn = `<article>
 
           <h4>工作描述</h4>
           <p>
-            该公司率先开发出基于腾讯企点互动平台，方便快捷的语义识别nlp的投标系统
-          <p>负责公司<strong>页面需求</strong>开发 </p>
+            基于<strong>腾讯企点</strong>互动平台，开发二级债券交易系统。
           </p>
           <h4>参与以下项目：</h4>
           <li><em>运营活动</em></li>
@@ -110,12 +110,10 @@ let pageCn = `<article>
           <li><em>前端组件库网页部署</em></li>
           <p>组件库官网页面优化与Jenkins构建，使组件库官网可以在开发环境展示，加强前端开发与UI的沟通效率。</p><strong>技术栈：webpack+Jenkins+gatsby+react</strong>
           <li><em>企点首页债券推荐优化</em></li>
-          <p>用户首页推荐的债券支持查看该投标的历史投标数据，进行新建和修改，并实时同步数据更新。</p><strong>技术栈：flex+react+ant design组件+websocket</strong>
-          <li><em>配适并优化nlp识别弹窗</em></li>
-          <p>与同事合作，展示nlp识别的多条投标内容弹窗，使用户可以通过语义对多条投标进行新建与修改，该功能作为公司业务核心功能广受好评。</p><strong>技术栈：flex+react+ant design组件</strong>
-          <li><em>nlp手动录入弹窗</em></li>
-          <p>用户手动录入语料，展示nlp识别后语料。</p><strong>技术栈：flex+react+ant design组件</strong>
-
+          <p>用户首页推荐的债券支持查看该投标的历史投标数据，进行新建和修改，并实时同步数据更新。</p><strong>技术栈：react+ant design组件</strong>
+          <li><em>配适并优化nlp(自然语言算法处理)识别弹窗</em></li>
+          <p>与同事合作，通过后台新接入的语言算法系统，可将自然语言转换成债券交易数据。
+          为此，用户可通过该界面输入自然语言；内容弹窗会根据算法结果，展示多样的nlp识别的多条投标，使用户可以通过语义对多条投标进行新建与修改，该功能作为公司业务核心功能广受好评。</p><strong>技术栈：react+ant design组件</strong>
         </li>
 
       </ol>
@@ -129,109 +127,113 @@ let pageCn = `<article>
 
           <h4>工作描述</h4>
           <p>
-            基于React Native和公司自研小程序，研发iot移动端信息控制系统，并完美配适安卓端和ios端。
-          <p>负责公司<strong>iot设备app页面</strong>开发 </p>
+            基于<strong>React Native</strong>和<strong>公司自研小程序</strong>，研发<strong>iot移动端</strong>信息控制系统，并完美配适安卓端和ios端。
+          <p>负责公司<strong>iot设备移动端页面</strong>开发 </p>
+         <p> 和安卓，ios，嵌入式，云端进行<strong>多端联调</strong></p>
           </p>
           <h4>参与以下项目：</h4>
           <li><em>双模蓝牙耳机</em></li>
-          <p>研发耳机控制，基础功能包括控制耳机设备的音量，eq频率曲线调整，耳机地理位置展示，断链寻回，蓝牙改名，蓝牙配对及重置等基础功能。
-          并在以上基础功能上实现了传统深蓝，科技白，酷炫黑紫，三种不同版本UI。
-          该项目到了react native的地图组件react-native-map，参与了双模蓝牙控制Ble和BT蓝牙识别，及名字更改三方同步等逻辑设定及探讨。
+          <p>研发<strong>控制耳机的app页面</strong>。</p>
+          <p>可控制耳机音量，eq频率曲线调整，耳机地理位置展示，断链寻回，蓝牙改名，蓝牙配对，重置蓝牙等<strong>基础功能</strong>。</p>
+          <p>并在以上基础功能上实现了传统深蓝，科技白，酷炫黑紫，<strong>三种版本UI</strong>。</p>
+          <p>该项目从0开始开发，与安卓，ios，嵌入式，云端<strong>多端研发</strong>一起参与此项目的技术实现研讨。</p>
+          <p>技术细节包括：使用<strong双模蓝牙</strong>控制Ble和BT蓝牙识别，及名字更改三方同步等逻辑。公司内部首次<strong>串口通信</strong>传输中文字符串给嵌入式，使用Unicode编码及十六进制转换传输。
           </p><strong>技术栈：React Native</strong>
         <div class="page2"></div>
           <li><em>定位器基础模板</em></li>
-          <p>研发定位器app基础功能模板，扩展定位能力。该模板适用于儿童/老人等寻人定位器，及宠物/物品定位器，和车载定位器，以及其它需要定位功能的iot设备，比如定位耳机。
-          通过GPS，LBS（基站坐标），WIFI等多种方式获取经纬度显示坐标。提供跳转定位导航第三方，如高德，百度，谷歌导航，方便导航并寻回设备位置。
-          该功能通过cat1网络和蓝牙两种方式与iot设备进行交互，并提供蓝牙信号强度，方便近距离设备位置定位。
-          并提供设备断联和重连提醒铃声选取，安全区域内不会进行重联断联提醒。
-          常用位置会通过智能计算，显示出来，提示用户可将该区域设为安全区域。
-          可展示定位器历史位置数据，并提供地图上的行动轨迹回溯功能。
-          儿童/老人/宠物等定位器提供生物独有的路程及卡路里等相关运动计算数据和相关运动建议，车载定位器独有过往里程计算及显示功能。
-          整理定位的相关能力api，提供其余需要更多定位功能的iot项目参考。
+          <p>研发<strong>定位器app功能</strong>，扩展定位能力。</p>
+          <p>该模板之后用于儿童/老人等寻人定位器，及宠物/物品定位器，和车载定位器，以及其它需要定位功能的iot设备，比如定位耳机。</p>
+          <p>通过GPS，LBS（基站坐标），WIFI地址等多种方式获取<strong>经纬度</strong>。并提供搜索位置能力，并可跳转定位导航第三方，如高德，百度，谷歌导航，方便导航并寻回设备位置。</p>
+          <p>通过<strong>cat1蜂窝网络和蓝牙</strong>两种通讯方式，与iot设备进行交互。并提供蓝牙信号强度，方便近距离设备位置定位。</p>
+          <p>并提供设备断联和重连提醒铃声选取，安全区域内不会进行<strong>重联断联提醒</strong>。</p>
+          <p>常用位置会通过智能计算，显示出来，提示用户可将该区域设为<strong>安全区域</strong>。</p>
+          <p>可展示定位器历史位置数据，并提供地图上的<strong>行动轨迹回溯</strong>功能。</p>
+          <p>儿童/老人/宠物等定位器提供生物独有的路程及卡路里等相关<strong>运动计算数据</strong>和相关运动建议，车载定位器独有过往里程计算及显示功能。</p>
+          <p>整理<strong>定位的相关能力api</strong>，提供其余需要更多定位功能的iot项目参考。</p>
           </p><strong>技术栈：React Native</strong>
           <li><em>基于涂鸦自研小程序研发舒适空间小程序</em></li>
           <p>
-          该小程序是涂鸦智能基于微信小程序基础，自研了一套小程序架构。该小程序作为2021年公司重点kpi项目，受到重点关注。
-          舒适空间小程序，是一个具有对公司旗下所有iot设备进行控制能力的小程序，因此入口在公司研发app最上方。
-          该小程序提供该账户所有绑定的室内iot设备采集到的信息展示，如温湿度信息等。
-          也提供相关设备的快捷操控，如开关定时关闭，加湿器指定湿度关闭等多种不同设备不同需求的控制。
-          并提供按照每日，每周，每月，每年等对设备的定时控制功能。
-          由于是早期接入该小程序，没有任何后期可使用的模板，如ray；小程序基础组对于相关组件开发也十分不完善。
-          因此，该项目耗费了大量时间用于滚动条，日历组件相关基础组件开发。
+          该小程序是公司，基于微信小程序基础，自研的涂鸦小程序。</p>
+          <p>开发该小程序时，<strong>涂鸦小程序</strong>的语法模板刚建设好。
+          作为2021年<strong>公司首次尝试自研小程序</strong>重点kpi实验性项目，受到重点关注。</p>
+          <p>舒适空间小程序，可对公司旗下<strong>所有iot设备</strong>进行控制的小程序，入口在公司研发app最上方。</p>
+          <p>小程序对账户内，具有<strong>传感器的iot设备</strong>，采集到的信息进行展示，如温湿度信息等。</p>
+          <p>也提供<strong>账户设备的快捷操控</strong>，如开关关闭，灯光颜色切换，耳机音量调整，等多种不同设备不同需求的控制。</p>
+          <p>并提供按照每日，每周，每月，每年等对设备的<strong>定时控制</strong>功能。</p>
+          <p>由于是早期接入该小程序，没有任何可使用的模板，如ray；基础组对于<strong>相关组件开发</strong>也十分不完善。</p>
+          <p>因此，该项目耗费了大量时间用于滚动条，日历组件相关<strong>基础组件开发</strong>。</p>
 </p><strong>技术栈：涂鸦小程序</strong>
           <li><em>多列竖直滚动条RN组件整理</em></li>
-          <p>将多列垂直滚动条组件进行整理输出，传到公司组件代码库，提供可复用的新组建。
-          该组件基于RN的单列竖直滚动条扩展，额外提供便捷配置列数，及横纵坐标数据，单位展示配置。
-          并且提供更换滚动条样式（CSS或者图片都支持），竖直滚动条间距等相关样式配置。
-         </p><strong>技术栈：React Native</strong>
-     
-
+          <p>将<strong>多列</strong>垂直滚动条<strong>组件整理</strong>输出，传到公司组件代码库，提供可复用的组件。
+          该组件基于RN的<strong>单列</strong>竖直滚动条扩展，额外提供便捷配置列数，及横纵坐标数据，单位展示配置。并可基于滚动条位置<strong>生成背景曲线</strong>。
+          并且提供更换滚动条样式（CSS或者图片），竖直滚动条间距，曲线颜色和渐变等相关<strong>样式配置</strong>。
+         </p><strong>技术栈：React Native + svg</strong>
         </li>
 
       </ol>
     </section>
 
 
-    <section class="projects">
-      <br>
-      <br>
-      <h2>
-        <img src="./images/project.png" alt="">
-        项目经历</h2>
-      <ol>
-        <li>
-          <header>
-            <h3>Js读取json数据实现动态气泡图</h3>
-            <span>
-              <a href="https://github.com/vouis/D3-project-motion-chart">源码链接</a>
-              <a href="https://vouis.github.io/D3-project-motion-chart/motion_chart.html">项目预览</a>
-            </span>
-          </header>
-          <img src="./images/motion.png" alt="" height="200" class="mimg">
-          <p>请下载<strong>data1.json</strong>作为数据源进行预览</p>
-          <p>
-            一款基于 <strong>JavaScript</strong> 的/ <strong>D3库</strong> / 的数据可视化展示。
-
-          </p>
-          <p>
-            主要功能有按照年份时间顺序，<strong>动态显示气泡图</strong>。
-
-          </p>
-          <p>
-            该图包括<strong>气泡半径，x，y轴，时间及气泡名称</strong>等需要从json文件获取的内容，通过SVG渲染到HTML
-
-          </p>
-          <p>
-            可<strong>额外配置</strong>气泡运行速度，图形比例大小，坐标内容等
-          </p>
-          <p><strong>技术栈： JavaScript+HTML5+CSS3+D3+json</strong></p>
-        </li>
-        <li>
-          <br>
-          <br>
-
+<!--    <section class="projects">-->
+<!--      <br>-->
+<!--      <br>-->
+<!--      <h2>-->
+<!--        <img src="./images/project.png" alt="">-->
+<!--        项目经历</h2>-->
+<!--      <ol>-->
+<!--        <li>-->
 <!--          <header>-->
-<!--            <h3>盒子导航</h3>-->
+<!--            <h3>Js读取json数据实现动态气泡图</h3>-->
 <!--            <span>-->
-<!--              <a href="https://github.com/vouis/box-nav" target="_blank">源码链接</a>-->
-<!--              <a href="https://vouis.github.io/box-nav/dist/index.html" target="_blank">项目预览</a>-->
+<!--              <a href="https://github.com/vouis/D3-project-motion-chart">源码链接</a>-->
+<!--              <a href="https://vouis.github.io/D3-project-motion-chart/motion_chart.html">项目预览</a>-->
 <!--            </span>-->
 <!--          </header>-->
-<!--          <img src="./images/box-nav.png" alt="" height="200" class="mimg">-->
+<!--          <img src="./images/motion.png" alt="" height="200" class="mimg">-->
+<!--          <p>请下载<strong>data1.json</strong>作为数据源进行预览</p>-->
 <!--          <p>-->
-<!--            这是一个基于 <strong>原生JavaScript</strong> 页面导航。-->
-<!--          </p>-->
-<!--          <p>-->
-<!--            加入了百度的<strong>搜索功能</strong>-->
-<!--          </p>-->
-<!--          <p>-->
-<!--            该系统通过浏览器<strong>Storage</strong>，本地<strong>保存网址数据</strong>。-->
-<!--          </p>-->
-<!--          <p><strong>技术栈： JavaScript+HTML5+LocalStorage+CSS3</strong></p>-->
-        </li>
+<!--            一款基于 <strong>JavaScript</strong> 的/ <strong>D3库</strong> / 的数据可视化展示。-->
 
-      </ol>
-    </section>
+<!--          </p>-->
+<!--          <p>-->
+<!--            主要功能有按照年份时间顺序，<strong>动态显示气泡图</strong>。-->
+
+<!--          </p>-->
+<!--          <p>-->
+<!--            该图包括<strong>气泡半径，x，y轴，时间及气泡名称</strong>等需要从json文件获取的内容，通过SVG渲染到HTML-->
+
+<!--          </p>-->
+<!--          <p>-->
+<!--            可<strong>额外配置</strong>气泡运行速度，图形比例大小，坐标内容等-->
+<!--          </p>-->
+<!--          <p><strong>技术栈： JavaScript+HTML5+CSS3+D3+json</strong></p>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <br>-->
+<!--          <br>-->
+
+<!--&lt;!&ndash;          <header>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3>盒子导航</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <span>&ndash;&gt;-->
+<!--&lt;!&ndash;              <a href="https://github.com/vouis/box-nav" target="_blank">源码链接</a>&ndash;&gt;-->
+<!--&lt;!&ndash;              <a href="https://vouis.github.io/box-nav/dist/index.html" target="_blank">项目预览</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </span>&ndash;&gt;-->
+<!--&lt;!&ndash;          </header>&ndash;&gt;-->
+<!--&lt;!&ndash;          <img src="./images/box-nav.png" alt="" height="200" class="mimg">&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>&ndash;&gt;-->
+<!--&lt;!&ndash;            这是一个基于 <strong>原生JavaScript</strong> 页面导航。&ndash;&gt;-->
+<!--&lt;!&ndash;          </p>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>&ndash;&gt;-->
+<!--&lt;!&ndash;            加入了百度的<strong>搜索功能</strong>&ndash;&gt;-->
+<!--&lt;!&ndash;          </p>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>&ndash;&gt;-->
+<!--&lt;!&ndash;            该系统通过浏览器<strong>Storage</strong>，本地<strong>保存网址数据</strong>。&ndash;&gt;-->
+<!--&lt;!&ndash;          </p>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p><strong>技术栈： JavaScript+HTML5+LocalStorage+CSS3</strong></p>&ndash;&gt;-->
+<!--        </li>-->
+
+<!--      </ol>-->
+<!--    </section>-->
 
     <br>
     <br>
