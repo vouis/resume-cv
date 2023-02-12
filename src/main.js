@@ -92,7 +92,7 @@ let pageCn = `<article>
       <ol>
         <li>
           <header>
-            <h2>1.QTrade债券交易平台</h2>
+            <h2>QTrade债券交易平台</h2>
             <br>
           </header>
           <p><strong>2020.06--2021.07 </strong></p>
@@ -118,7 +118,7 @@ let pageCn = `<article>
       <ol>
         <li>
           <header>
-            <h2>2.涂鸦智能</h2>
+            <h2>涂鸦智能</h2>
             <br>
           </header>
           <p><strong>2021.07--2022.10 </strong></p>
