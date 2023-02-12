@@ -79,7 +79,7 @@ let pageCn = `<article>
       </p>
       <p>熟练掌握 <strong>React</strong> 和 <strong>React Native</strong>的使用，包括 Hooks、相关组件 antd等</p>
       <p>熟悉 <strong>git</strong> 代码发布部署流程</p>
-      <p>良好的人际关系和<strong>团队合作</strong>精神，我可以与来自不同背景的人成功互动，促进并确保项目进展 </p>
+      <p>良好的人际关系和<strong>团队合作</strong>精神，我可以与来自不同背景的人融洽互动，促进并确保项目进展 </p>
       <br>
       <br>
     </section>
@@ -92,11 +92,11 @@ let pageCn = `<article>
       <ol>
         <li>
           <header>
-            <h2>QTrade</h2>
+            <h2>1.QTrade债券交易平台</h2>
             <br>
           </header>
           <p><strong>2020.06--2021.07 </strong></p>
-
+          <br>
           <h4>工作描述</h4>
           <p>
             基于<strong>腾讯企点</strong>互动平台，开发二级债券交易系统。
@@ -105,8 +105,6 @@ let pageCn = `<article>
           <li><em>运营活动</em></li>
           <p>开发H5抽奖活动页面，并兼容IE浏览器，成功推广新功能并为新功能增加日活。</p><strong>技术栈：vue</strong>
         <div class="page2"></div>
-          <li><em>一创展业平台合作的联合平台</em></li>
-          <p>开发我司和一创展业平台的合作页面，使得用户可以在我司平台上投一创的标。</p><strong>技术栈：flex+react+ant design组件</strong>
           <li><em>前端组件库网页部署</em></li>
           <p>组件库官网页面优化与Jenkins构建，使组件库官网可以在开发环境展示，加强前端开发与UI的沟通效率。</p><strong>技术栈：webpack+Jenkins+gatsby+react</strong>
           <li><em>企点首页债券推荐优化</em></li>
@@ -120,11 +118,11 @@ let pageCn = `<article>
       <ol>
         <li>
           <header>
-            <h2>涂鸦智能</h2>
+            <h2>2.涂鸦智能</h2>
             <br>
           </header>
           <p><strong>2021.07--2022.10 </strong></p>
-
+<br>
           <h4>工作描述</h4>
           <p>
             基于<strong>React Native</strong>和<strong>公司自研小程序</strong>，研发<strong>iot移动端</strong>信息控制系统，并完美配适安卓端和ios端。
@@ -139,7 +137,7 @@ let pageCn = `<article>
           <p>该项目从0开始开发，与安卓，ios，嵌入式，云端<strong>多端研发</strong>一起参与此项目的技术实现研讨。</p>
           <p>技术细节包括：使用<strong双模蓝牙</strong>控制Ble和BT蓝牙识别，及名字更改三方同步等逻辑。公司内部首次<strong>串口通信</strong>传输中文字符串给嵌入式，使用Unicode编码及十六进制转换传输。
           </p><strong>技术栈：React Native</strong>
-        <div class="page2"></div>
+       
           <li><em>定位器基础模板</em></li>
           <p>研发<strong>定位器app功能</strong>，扩展定位能力。</p>
           <p>该模板之后用于儿童/老人等寻人定位器，及宠物/物品定位器，和车载定位器，以及其它需要定位功能的iot设备，比如定位耳机。</p>
