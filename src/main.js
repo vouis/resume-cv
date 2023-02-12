@@ -76,7 +76,7 @@ let pageCn = `<article>
       <p>
         熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等
       </p>
-      <p>熟练掌握 <strong>React</strong>的使用，包括 Hooks、相关组件 antd等</p>
+      <p>熟练掌握 <strong>React</strong> 和 <strong>React Native</strong>的使用，包括 Hooks、相关组件 antd等</p>
       <p>熟悉 <strong>git</strong> 代码发布部署流程</p>
       <p>良好的人际关系和<strong>团队合作</strong>精神，我可以与来自不同背景的人成功互动，促进并确保项目进展 </p>
       <br>
@@ -91,10 +91,10 @@ let pageCn = `<article>
       <ol>
         <li>
           <header>
-            <h3>从实习开始至今的公司--QTrade</h3>
+            <h2>QTrade</h2>
             <br>
           </header>
-          <p><strong>2020.06--至今 </strong></p>
+          <p><strong>2020.06--2021.07 </strong></p>
 
           <h4>工作描述</h4>
           <p>
@@ -115,6 +115,56 @@ let pageCn = `<article>
           <p>与同事合作，展示nlp识别的多条投标内容弹窗，使用户可以通过语义对多条投标进行新建与修改，该功能作为公司业务核心功能广受好评。</p><strong>技术栈：flex+react+ant design组件</strong>
           <li><em>nlp手动录入弹窗</em></li>
           <p>用户手动录入语料，展示nlp识别后语料。</p><strong>技术栈：flex+react+ant design组件</strong>
+
+        </li>
+
+      </ol>
+      <ol>
+        <li>
+          <header>
+            <h2>涂鸦智能</h2>
+            <br>
+          </header>
+          <p><strong>2021.07--2022.10 </strong></p>
+
+          <h4>工作描述</h4>
+          <p>
+            基于React Native和公司自研小程序，研发iot移动端信息控制系统，并完美配适安卓端和ios端。
+          <p>负责公司<strong>iot设备app页面</strong>开发 </p>
+          </p>
+          <h4>参与以下项目：</h4>
+          <li><em>双模蓝牙耳机</em></li>
+          <p>研发耳机控制，基础功能包括控制耳机设备的音量，eq频率曲线调整，耳机地理位置展示，断链寻回，蓝牙改名，蓝牙配对及重置等基础功能。
+          并在以上基础功能上实现了传统深蓝，科技白，酷炫黑紫，三种不同版本UI。
+          该项目到了react native的地图组件react-native-map，参与了双模蓝牙控制Ble和BT蓝牙识别，及名字更改三方同步等逻辑设定及探讨。
+          </p><strong>技术栈：React Native</strong>
+        <div class="page2"></div>
+          <li><em>定位器基础模板</em></li>
+          <p>研发定位器app基础功能模板，扩展定位能力。该模板适用于儿童/老人等寻人定位器，及宠物/物品定位器，和车载定位器，以及其它需要定位功能的iot设备，比如定位耳机。
+          通过GPS，LBS（基站坐标），WIFI等多种方式获取经纬度显示坐标。提供跳转定位导航第三方，如高德，百度，谷歌导航，方便导航并寻回设备位置。
+          该功能通过cat1网络和蓝牙两种方式与iot设备进行交互，并提供蓝牙信号强度，方便近距离设备位置定位。
+          并提供设备断联和重连提醒铃声选取，安全区域内不会进行重联断联提醒。
+          常用位置会通过智能计算，显示出来，提示用户可将该区域设为安全区域。
+          可展示定位器历史位置数据，并提供地图上的行动轨迹回溯功能。
+          儿童/老人/宠物等定位器提供生物独有的路程及卡路里等相关运动计算数据和相关运动建议，车载定位器独有过往里程计算及显示功能。
+          整理定位的相关能力api，提供其余需要更多定位功能的iot项目参考。
+          </p><strong>技术栈：React Native</strong>
+          <li><em>基于涂鸦自研小程序研发舒适空间小程序</em></li>
+          <p>
+          该小程序是涂鸦智能基于微信小程序基础，自研了一套小程序架构。该小程序作为2021年公司重点kpi项目，受到重点关注。
+          舒适空间小程序，是一个具有对公司旗下所有iot设备进行控制能力的小程序，因此入口在公司研发app最上方。
+          该小程序提供该账户所有绑定的室内iot设备采集到的信息展示，如温湿度信息等。
+          也提供相关设备的快捷操控，如开关定时关闭，加湿器指定湿度关闭等多种不同设备不同需求的控制。
+          并提供按照每日，每周，每月，每年等对设备的定时控制功能。
+          由于是早期接入该小程序，没有任何后期可使用的模板，如ray；小程序基础组对于相关组件开发也十分不完善。
+          因此，该项目耗费了大量时间用于滚动条，日历组件相关基础组件开发。
+</p><strong>技术栈：涂鸦小程序</strong>
+          <li><em>多列竖直滚动条RN组件整理</em></li>
+          <p>将多列垂直滚动条组件进行整理输出，传到公司组件代码库，提供可复用的新组建。
+          该组件基于RN的单列竖直滚动条扩展，额外提供便捷配置列数，及横纵坐标数据，单位展示配置。
+          并且提供更换滚动条样式（CSS或者图片都支持），竖直滚动条间距等相关样式配置。
+         </p><strong>技术栈：React Native</strong>
+     
 
         </li>
 
@@ -257,7 +307,7 @@ let pageEn = `<article>
         Familiar with <strong>Front-end and back-end separation</strong> technology, including AJAX, cross-domain, front-end routing, Cookie, Session, etc.
       </p>
       <p>
-      Familiar with the use of <strong>React</strong>, including Hooks, related components antd, etc.
+      Familiar with the use of <strong>React</strong>, <strong>React Native</strong> including Hooks, related components antd, etc.
       </p>
       <p>
       Familiar with the <strong>git</strong> code release and deployment process
