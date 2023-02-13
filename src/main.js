@@ -16,7 +16,7 @@ let pageCn = `<article>
     <section class="bio">
       <h1 class='mid'>丁宁</h1>
       <p class="mid1">
-        女 | 25岁 | 前端开发工程师 | 深圳
+        女 | 25岁 | 前端开发工程师 | 深圳 | 工作经验2.5年
       </p >
     </section>
 
@@ -79,6 +79,7 @@ let pageCn = `<article>
       </p>
       <p>熟练掌握 <strong>React</strong> 和 <strong>React Native</strong>的使用，包括 Hooks、相关组件 antd等</p>
       <p>熟悉 <strong>git</strong> 代码发布部署流程</p>
+      <p>使用过 <strong>vue</strong>，<strong>微信小程序</strong>等开发工具</p>
       <p>良好的人际关系和<strong>团队合作</strong>精神，我可以与来自不同背景的人融洽互动，促进并确保项目进展 </p>
       <br>
       <br>
